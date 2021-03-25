@@ -31,3 +31,7 @@ function showmenu(){
     document.getElementById("menu").style.display="none"
     document.getElementById("main").style.display= "block"
 }
+function change(){
+    var color = document.getElementById("backcolor").value
+    document.body.style.backgroundColor = color
+}
