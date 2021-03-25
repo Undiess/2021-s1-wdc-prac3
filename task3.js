@@ -6,8 +6,20 @@ function counter(element){
 function postContent(){ 
     var time = new Date;
     var content = document.getElementById("textinput").value;
+    var color = document.getElementsByName("color");
+    for(var i =0; i < color.length ; i++){ 
+        if(color[i].checked){
+            var chosencolor = color[i].value
+        }
+    }
+    var NumOfTimes= document.getElementById("quantity").value
+    console.log(NumOfTimes)
+    for(var i=0; i<NumOfTimes; i++){
+        console.log("hi")
+        document.getElementById("posts").innerHTML += "<p class='post-time'>"+time+"</p>  <p style='color:"+ chosencolor +";' class='post-content'>"+content+"</p>"
+    }
 
-    document.getElementById("posts").innerHTML= "<p class='post-time'>"+time+"</p>  <p class='post-content'>"+content+"</p>"
+   
 }
 
 function hidemain(){ 
