@@ -7,5 +7,5 @@ function postContent(){
     var time = new Date;
     var content = document.getElementById("textinput").value;
 
-    var newPost = document.getElementById("posts").innerHTML= "<p>"+time+"</p>  <p>"+content+"</p>"
+    document.getElementById("posts").innerHTML= "<p>"+time+"</p>  <p>"+content+"</p>"
 }
