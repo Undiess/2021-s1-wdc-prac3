@@ -14,8 +14,8 @@ function postContent(){
     }
     var NumOfTimes= document.getElementById("quantity").value
     console.log(NumOfTimes)
-    for(var i=0; i<NumOfTimes; i++){
-        console.log("hi")
+    for(var j=0; j<NumOfTimes; j++){
+        
         document.getElementById("posts").innerHTML += "<p class='post-time'>"+time+"</p>  <p style='color:"+ chosencolor +";' class='post-content'>"+content+"</p>"
     }
 
